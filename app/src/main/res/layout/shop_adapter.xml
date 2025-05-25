@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="480dp"
+    android:layout_margin="10dp"
+    card_view:cardElevation="2dp"
+    card_view:cardCornerRadius="1dp"
+    card_view:cardBackgroundColor="@color/color_primary"
+  >
+    <!-- Heart Icon over image -->
+    <ImageView
+        android:id="@+id/imageHeart"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:padding="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_circle_dark"
+        android:src="@drawable/heart40" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cardgrey"
+        android:padding="15dp"
+
+        >
+
+
+
+    <ImageView
+        android:id="@+id/imageProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:src="@drawable/productimage" />
+
+
+
+        <LinearLayout
+            android:id="@+id/contentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_black_shape"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:elevation="2dp"
+            android:layout_below="@id/imageProduct">
+
+            <!-- Name and Stock -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="2dp">
+
+                <TextView
+                    android:id="@+id/titlename"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="glow"
+                    android:textColor="#A6FF00"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/tangerine"/>
+
+                <TextView
+                    android:id="@+id/stock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="In stock"
+                    android:textColor="#A6FF00"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/descripcation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="French clay and algae-powered cleanser"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:padding="2dp"/>
+
+            <TextView
+                android:id="@+id/skininfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Skin Tightness • Dry &amp; Dehydrated Skin"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"
+                android:padding="2dp"/>
+
+            <!-- Price Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                android:padding="2dp">
+
+                <TextView
+                    android:id="@+id/currentprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs. 355.20"
+                    android:textColor="#AA80FF"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/actuallprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs. 444.00"
+                    android:textColor="#888888"
+                    android:layout_marginStart="8dp"
+                    android:textSize="14sp"
+                    android:padding="2dp"/>
+            </LinearLayout>
+
+            <!-- Rating and review -->
+            <LinearLayout
+                android:id="@+id/ratingreview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical">
+
+                <!-- Stars -->
+                <ImageView
+                    android:id="@+id/star1"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/start50" />
+                <ImageView
+                    android:id="@+id/star2"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/start50" />
+                <ImageView
+                    android:id="@+id/star3"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/start50" />
+                <ImageView
+                    android:id="@+id/star4"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/start50" />
+                <ImageView
+                    android:id="@+id/star5"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/start50" />
+
+                <TextView
+                    android:id="@+id/feedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="249 reviews"
+                    android:textColor="#A9A9A9"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/neuzeitsbook"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/bg_circle"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:id="@+id/imageCart"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/cart10"
+           />
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>
